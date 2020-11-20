@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "eventstream",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "CategoryCacheInvalidator_ConnectionString",
+      "databaseName": "movies",
+      "collectionName": "eventstream",
+      "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "name": "inputCategories",
+      "direction": "in",
+      "type": "cosmosDB",
+      "databaseName": "movies",
+      "collectionName": "Category",
+      "connectionStringSetting": "CategoryCacheInvalidator_ConnectionString"
+    }
+  ]
+}

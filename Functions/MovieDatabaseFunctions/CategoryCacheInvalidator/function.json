@@ -1,0 +1,14 @@
+{
+    "bindings": [
+      {
+        "type": "cosmosDBTrigger",
+        "name": "input",
+        "direction": "in",
+        "leaseCollectionName": "leases",
+        "connectionStringSetting": "CategoryCacheInvalidator_ConnectionString",
+        "databaseName": "movies",
+        "collectionName": "Category",
+        "createLeaseCollectionIfNotExists": true
+      }
+    ]
+  }

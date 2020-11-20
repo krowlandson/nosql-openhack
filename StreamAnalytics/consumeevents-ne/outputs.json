@@ -1,0 +1,100 @@
+{
+    "value": [
+      {
+        "id": "/subscriptions/50ac70f9-f7ba-41eb-9822-610944d9f6cc/resourceGroups/openhack1/providers/Microsoft.StreamAnalytics/streamingjobs/consumeevents/outputs/eventagregate",
+        "name": "eventagregate",
+        "type": "Microsoft.StreamAnalytics/streamingjobs/outputs",
+        "properties": {
+          "datasource": {
+            "type": "Microsoft.Storage/DocumentDB",
+            "properties": {
+              "collectionNamePattern": "aggregate",
+              "accountId": "movies",
+              "accountKey": null,
+              "database": "movies"
+            }
+          },
+          "etag": "a6eefd73-4999-4231-91f1-122951338d1e"
+        }
+      },
+      {
+        "id": "/subscriptions/50ac70f9-f7ba-41eb-9822-610944d9f6cc/resourceGroups/openhack1/providers/Microsoft.StreamAnalytics/streamingjobs/consumeevents/outputs/eventtarget",
+        "name": "eventtarget",
+        "type": "Microsoft.StreamAnalytics/streamingjobs/outputs",
+        "properties": {
+          "datasource": {
+            "type": "Microsoft.Storage/DocumentDB",
+            "properties": {
+              "collectionNamePattern": "eventstream",
+              "accountId": "movies",
+              "accountKey": null,
+              "database": "movies"
+            }
+          },
+          "etag": "7f3f46f3-a926-470a-ba06-f4c7b7d7bf80"
+        }
+      },
+      {
+        "id": "/subscriptions/50ac70f9-f7ba-41eb-9822-610944d9f6cc/resourceGroups/openhack1/providers/Microsoft.StreamAnalytics/streamingjobs/consumeevents/outputs/eventtarget-cosmoslink",
+        "name": "eventtarget-cosmoslink",
+        "type": "Microsoft.StreamAnalytics/streamingjobs/outputs",
+        "properties": {
+          "datasource": {
+            "type": "Microsoft.Storage/DocumentDB",
+            "properties": {
+              "collectionNamePattern": "synapseeventstream",
+              "accountId": "movies",
+              "accountKey": null,
+              "database": "movies"
+            }
+          },
+          "etag": "5ed68f1f-0c46-49a9-8fe6-a678f012e293"
+        }
+      },
+      {
+        "id": "/subscriptions/50ac70f9-f7ba-41eb-9822-610944d9f6cc/resourceGroups/openhack1/providers/Microsoft.StreamAnalytics/streamingjobs/consumeevents/outputs/hacker5powerbi",
+        "name": "hacker5powerbi",
+        "type": "Microsoft.StreamAnalytics/streamingjobs/outputs",
+        "properties": {
+          "datasource": {
+            "type": "PowerBI",
+            "properties": {
+              "authenticationMode": "UserToken",
+              "dataset": "streamanalyticsdataset",
+              "table": "aggregate",
+              "groupId": "df8ab471-0152-4bac-b032-45a3c06c648c",
+              "groupName": "powerbiworkspace",
+              "refreshToken": null,
+              "accessToken": null,
+              "tokenUserPrincipalName": "hacker5fzn@OTAPRD173ops.onmicrosoft.com",
+              "tokenUserDisplayName": " "
+            }
+          },
+          "etag": "f29e36be-f9d3-4696-8fd0-f6bffeb221ff"
+        }
+      },
+      {
+        "id": "/subscriptions/50ac70f9-f7ba-41eb-9822-610944d9f6cc/resourceGroups/openhack1/providers/Microsoft.StreamAnalytics/streamingjobs/consumeevents/outputs/WtreamPowerBIteam6",
+        "name": "WtreamPowerBIteam6",
+        "type": "Microsoft.StreamAnalytics/streamingjobs/outputs",
+        "properties": {
+          "datasource": {
+            "type": "PowerBI",
+            "properties": {
+              "authenticationMode": "UserToken",
+              "dataset": "eventsstream",
+              "table": "streamagg",
+              "groupId": "73dd8a9a-711d-4919-8e0b-5a629f92cab9",
+              "groupName": "ohstream",
+              "refreshToken": null,
+              "accessToken": null,
+              "tokenUserPrincipalName": "hacker3a7h@OTAPRD173ops.onmicrosoft.com",
+              "tokenUserDisplayName": " "
+            }
+          },
+          "etag": "f5f20c30-4130-4539-99ab-ac801f3a0f71"
+        }
+      }
+    ],
+    "nextLink": null
+  }
